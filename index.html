@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante caminho do Abismo</title>
+</head>
+
+<body>
+    <form action="#" method="get">
+        <h1>Restaurante caminho do Abismo</h1>
+        <h2>Bem vindo espero que você coma sua pizza e vá embora logo</h2>
+
+        <h3>Escolha suas opções</h3>
+        <input type="checkbox" name="opcoes[]" value="solado"> + solado <br>
+        <input type="checkbox" name="opcoes[]" value="chucrute"> + chucrute <br>
+        <input type="checkbox" name="opcoes[]" value="sushi"> + sushi <br>
+        <input type="checkbox" name="opcoes[]" value="macarrao"> + macarrão <br>
+
+        <h3>Vai querer borda recheada? <small>Recheio de pasta de alho</small></h3>
+        <input type="radio" name="borda" value="sim"> sim <br>
+        <input type="radio" name="borda" value="nao"> não <br>
+
+        <h3>Vai querer bebida? Só pode escolher um! <small>Se quiser mais compre outra pizza!<del>seu bostinha</del></small></h3>
+        <input type="radio" name="bebida" value="Cocacoca"> Coca coca <br>
+        <input type="radio" name="bebida" value="Guricola"> Guri cola <br>
+        <input type="radio" name="bebida" value="Buzzcola"> Buzz cola <br>
+        <input type="radio" name="bebida" value="Aguadapia"> Agua da pia <br><br>
+
+        <h3>Por favor nos informe seu nome para a entrega <small>Não entregaremos para mais ninguém além desse nome, leve seu RG</small></h3>
+        <input type="text" name="nomeUsurario" placeholder="Coloque aqui e não erre">
+        <h3>Digite uma senha para que você confirme o pedido com o entregador.</h3><small> precisa de 20 caracteres mínimo, números, maiúsculas e minúsculas, caracter especial, seu nome e nome de um país</small>
+        <br>
+        <input type="password" name="senha" placeholder="vai mano te vira"><br>
+
+        <h3>Insira seu email para receber <del>spam</del> noticias e promoções nossas</h3>
+        <small>É obrigatório, não teima</small>
+        <br>
+        <input type="email" name="email" placeholder="temos LGPD confia"><br>
+
+        <h3>Vamos para o endereço logo que eu eu ja to cansado</h3>
+        <small>seje eficiente</small>
+        <br>
+        <select name="endereço">
+            <option value="">selecione uma opção</option>
+            <option value="barraco">barraco</option>
+            <option value="tenda">tenda</option>
+            <option value="casa">casa</option>
+            <option value="apertamento">apertamento</option>
+            <option value="muquifo">muquifo</option>
+            <option value="trabalho">trabalho</option>
+        </select>
+        <br>
+        <small>número</small>
+        <br>
+        <input type="number" min="0" max="10000">
+        <br>
+        <small>Agora não enrole, pois não vamos ler tudo, coloque em 10 letras um ponto de referência</small>
+        <br>
+        <textarea name="referencia" rows="30" minlength="5" maxlength="10"></textarea>
+        <br>
+
+        <br>
+        <h3>Vamos agendar a entrega da sua comida, escolha a semana que você ainda gostaria de receber caso o motoboy seja <del>corno</del> atropelado</h3>
+        <input type="week" name="semana"><br>
+
+        <h3>Confirme se você revisou seu pedido, não aceitaremos alterações</h3>
+        não<input type="range" max="1" min="0">sim
+        <br>
+        <br>
+        <button type="submit">Finalmente terminei </button>
+        <button type="reset">Quero fazer tudo do 0 de novo</button>
+    </form>
+</body>
+
+</html>
